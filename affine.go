@@ -3,6 +3,18 @@ Package affine provides functionality for decrypting, encrypting, and attacking 
 
 For the attack, it uses the knowledge that a jpg binary file begins with 0xFF 0xD8, and uses this
 knowledge to find the decryption key's a and b for (ax + b) % 256.
+
+Usage:
+	-a string
+		The a key (only used for decrypt / encrypt).
+	-b string
+		The b key (only used for decrypt / encrypt).
+	-input string
+		The input file.
+	-method string
+		The method to use: [decrypt, encrypt, attack].
+	-output string
+		The output file.
 */
 
 package main
